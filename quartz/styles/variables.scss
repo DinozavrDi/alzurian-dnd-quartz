@@ -12,7 +12,7 @@ $breakpoints: (
   desktop: 1200px,
 );
 
-$image-bg-page: url("/static/images/bg.png");
+$image-bg-page: url("static/images/bg.png");
 
 $mobile: "(max-width: #{map.get($breakpoints, mobile)})";
 $tablet: "(min-width: #{map.get($breakpoints, mobile)}) and (max-width: #{map.get($breakpoints, desktop)})";
