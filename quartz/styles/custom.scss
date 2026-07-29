@@ -1,3 +1,127 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-image: $image-bg-page !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-color: $color-bg-1;
+}
+
+#quartz-body {
+  gap: 8px;
+  max-width: 100%;
+}
+
+.left.sidebar {
+  padding: 32px;
+  background-color: $color-sand;
+  border-radius: 4px;
+}
+
+.center {
+  background-color: $color-sand;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.right.sidebar {
+  background-color: $color-sand;
+  border-radius: 4px;
+  padding: 32px;
+  height: fit-content;
+  grid-area: auto;
+  width: auto;
+  max-width: none;
+  min-width: none;
+}
+
+.nav-file-title.tree-item-self {
+  color: $color-button-bg-gray-hover;
+
+  &.active.is-active {
+    color: $color-text-title;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $color-text-title;
+}
+
+.preview-container {
+  background-color: $color-sand;
+}
+
+.page-header {
+  margin-top: 0px;
+}
+
+.search-bar {
+  color: $color-bg-1;
+}
+
+.result-card .card-title {
+  color: $color-text-title;
+}
+
+.result-card.no-match {
+  & h3 {
+    color: $color-text-title;
+  }
+}
+
+.page-title {
+  a {
+    color: $color-text-title;
+    font-weight: 700;
+  }
+}
+
+.highlight {
+  background-color: $color-red-fade-1;
+}
+
+.folder-title {
+  color: $color-bg-1;
+}
+
+.folder-container.nav-folder-title.tree-item-self svg {
+  color: $color-bg-1;
+}
+
+.breadcrumb-element a {
+  color: $block-background-dark;
+
+  &:hover {
+    color: $color-button-bg-green;
+  }
+}
+
+strong {
+  color: $color-bg-1;
+  font-weight: bold;
+}
+
+.toc-content.overflow {
+  li {
+    a {
+      color: $color-bg-page;
+      &.in-view {
+        color: $color-bg-1;
+      }
+    }
+  }
+}

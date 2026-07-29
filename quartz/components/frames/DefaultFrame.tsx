@@ -21,6 +21,7 @@ export const DefaultFrame: PageFrame = {
     right,
     footer,
   }: PageFrameProps) {
+    console.log(right)
     return (
       <>
         <div class="left sidebar">
@@ -42,14 +43,13 @@ export const DefaultFrame: PageFrame = {
             </div>
           </div>
           <Content {...componentData} />
-          <hr />
           <div class="page-footer">
             {afterBody.map((BodyComponent) => (
               <BodyComponent {...componentData} />
             ))}
           </div>
         </div>
-        <div class="right sidebar">
+        <div class="right sidebar" data-hidden={right.length}>
           {right.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}

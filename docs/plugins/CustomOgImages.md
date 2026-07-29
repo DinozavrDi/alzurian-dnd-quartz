@@ -338,20 +338,6 @@ export const og: SocialImageOptions["Component"] = (
           >
             {title}
           </h2>
-          <ul
-            style={{
-              color: cfg.theme.colors[colorScheme].gray,
-              gap: "1rem",
-              fontSize: "1.5rem",
-              fontFamily: fonts[1].name,
-            }}
-          >
-            {Li.map((item, index) => {
-              if (item) {
-                return <li key={index}>{item}</li>
-              }
-            })}
-          </ul>
         </div>
         <p
           style={{
