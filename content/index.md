@@ -3,36 +3,12 @@ title: Алзуриан
 ---
 
 <div class="home-wrapper">
-  <a class="home-button" href="кампейны">
-    Кампейны
-  </a>
-
-  <a class="home-button" href="персонажи">
-    Персонажи
-  </a>
-
-  <a class="home-button" href="лор">
-    Лор
-  </a>
-
-  <a class="home-button" href="предметы">
-    Предметы
-  </a>
-
-  <a class="home-button" href="механики">
-    Механики
-  </a>
-
-  <a class="home-button" href="заклинания">
-    Заклинания
-  </a>
-
-  <a class="home-button" href="расы">
-    Расы
-  </a>
-
-  <a class="home-button" href="подклассы">
-    Подклассы
-  </a>
-
+  <span class="home-button">[[кампейны|Кампейны]]</span>
+  <span class="home-button">[[персонажи|Персонажи]]</span>
+  <span class="home-button">[[лор|Лор]]</span>
+  <span class="home-button">[[предметы|Предметы]]</span>
+  <span class="home-button">[[механики|Механики]]</span>
+  <span class="home-button">[[заклинания|Заклинания]]</span>
+  <span class="home-button">[[расы|Расы]]</span>
+  <span class="home-button">[[подклассы|Подклассы]]</span>
 </div>
