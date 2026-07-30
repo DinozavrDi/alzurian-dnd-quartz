@@ -1,7 +1,7 @@
 ---
 title: Алзуриан
 ---
-![[Pasted image 20260730004042.png]]
+
 <div class="home-wrapper">
   <a class="home-button" href="/кампейны">
     Кампейны
