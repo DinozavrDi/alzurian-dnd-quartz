@@ -1,3 +1,5 @@
+formulas:
+  Домен бога: prop
 properties:
   file.name:
     displayName: Имя божества
@@ -7,6 +9,7 @@ views:
     filters:
       and:
         - file.folder == "Лор/Боги"
+        - file.hasProperty("Домен")
     order:
       - file.name
       - Домен

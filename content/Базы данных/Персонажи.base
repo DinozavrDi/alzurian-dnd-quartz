@@ -1,0 +1,17 @@
+formulas:
+  Домен бога: prop
+properties:
+  file.name:
+    displayName: Имя персонажа
+views:
+  - type: table
+    name: Таблица
+    filters:
+      and:
+        - file.folder == "Персонажи"
+        - file.hasProperty("Создатель")
+    order:
+      - file.name
+      - Кампейн
+      - Создатель
+    sort: []

@@ -180,3 +180,20 @@ strong {
     }
   }
 }
+
+.bases-table {
+  width: 100%;
+  margin: 0;
+}
+
+/* Находим элемент с вашим дата-атрибутом и полностью скрываем его */
+[data-folderpath="базы-данных/index"],
+[data-folderpath="базы данных/index"] {
+  display: none !important;
+}
+
+/* Находим весь контейнер списка этой папки и тоже стираем его, чтобы не было пустых отступов */
+li:has([data-folderpath^="базы-данных"]),
+li:has([data-folderpath^="базы данные"]) {
+  display: none !important;
+}
