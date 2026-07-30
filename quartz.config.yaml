@@ -44,6 +44,8 @@ configuration:
         textHighlight: "#fff23688"
 
 plugins:
+  - source: "@quartz-community/slugify"
+    enabled: true
   - source: "@quartz-community/created-modified-date"
     enabled: true
     options:
