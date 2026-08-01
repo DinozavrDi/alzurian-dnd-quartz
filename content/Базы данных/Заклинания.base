@@ -1,0 +1,30 @@
+formulas:
+  Домен бога: prop
+properties:
+  file.name:
+    displayName: Название
+  note.Домен:
+    displayName: Класс
+views:
+  - type: table
+    name: Таблица
+    filters:
+      and:
+        - file.folder == "Заклинания"
+        - file.hasProperty("Классы")
+    order:
+      - file.name
+      - Уровень
+      - Школа
+      - Классы
+    sort:
+      - property: Компоненты
+        direction: ASC
+      - property: Время накладывания
+        direction: ASC
+      - property: file.name
+        direction: DESC
+      - property: Домен
+        direction: DESC
+    columnSize:
+      file.name: 204

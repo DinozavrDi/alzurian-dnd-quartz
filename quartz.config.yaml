@@ -23,26 +23,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#e4d8c8" # Серо-оливковый фон контента (бумага)
-        lightgray: "#c1bab2" # Светлые строки таблиц и границы
-        gray: "#707361" # Второстепенный текст и плашки подклассов
-        darkgray: "#202020" # Черный текст статей (максимально читаемый)
-        dark: "#2c3b28" # Темно-зеленый для заголовков
-        secondary: "#31593c" # Травянисто-зеленый для ссылок и кнопок
-        tertiary: "#2c3b28" # Золотистый/песочный цвет для ховера
+        light: "#e4d8c8"
+        lightgray: "#c1bab2"
+        gray: "#707361"
+        darkgray: "#202020"
+        dark: "#2c3b28"
+        secondary: "#31593c"
+        tertiary: "#2c3b28"
         highlight: rgba(49, 89, 60, 0.1)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#e4d8c8" # Серо-оливковый фон контента (бумага)
-        lightgray: "#dcdccb" # Светлые строки таблиц и границы
-        gray: "#707361" # Второстепенный текст и плашки подклассов
-        darkgray: "#202020" # Черный текст статей (максимально читаемый)
-        dark: "#2c3b28" # Темно-зеленый для заголовков
-        secondary: "#31593c" # Травянисто-зеленый для ссылок и кнопок
-        tertiary: "#b39045" # Золотистый/песочный цвет для ховера
+        light: "#e4d8c8"
+        lightgray: "#dcdccb"
+        gray: "#707361"
+        darkgray: "#202020"
+        dark: "#2c3b28"
+        secondary: "#31593c"
+        tertiary: "#b39045"
         highlight: rgba(49, 89, 60, 0.1)
         textHighlight: "#fff23688"
-
 plugins:
   - source: "@quartz-community/slugify"
     enabled: true
@@ -284,6 +283,29 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  - source: github:quartz-community/note-properties
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - Создатель
+        - Кампейн
+        - Уровень
+        - Школа
+        - Время накладывания
+        - Дистанция
+        - Компоненты
+        - Длительность
+        - Классы
+        - Архетипы
+      excludedProperties: []
+      hidePropertiesView: false
+      delimiters: ---
+      language: yaml
+    order: 5
+    layout:
+      position: none
+      priority: 15
 layout:
   groups:
     toolbar:
