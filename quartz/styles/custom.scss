@@ -197,3 +197,24 @@ li:has([data-folderpath^="базы-данных"]),
 li:has([data-folderpath^="базы данные"]) {
   display: none !important;
 }
+
+.mermaid-space {
+  user-select: none;
+}
+
+.explorer-ul.overflow {
+  scrollbar-color: $color-text-title $color-sand;
+  scrollbar-width: thin;
+}
+
+.map-container {
+  width: 100%;
+  height: 90vh;
+  overflow: auto;
+}
+
+.map {
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+}
