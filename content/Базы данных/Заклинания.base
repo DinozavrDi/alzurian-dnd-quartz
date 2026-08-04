@@ -10,7 +10,7 @@ views:
     name: Таблица
     filters:
       and:
-        - file.folder == "Заклинания"
+        - file.folder == "📜 Заклинания"
         - file.hasProperty("Классы")
     order:
       - file.name
