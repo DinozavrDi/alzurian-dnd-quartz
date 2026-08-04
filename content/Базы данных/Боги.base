@@ -8,7 +8,7 @@ views:
     name: Таблица
     filters:
       and:
-        - file.folder == "Лор/Боги"
+        - file.folder == "📚 Лор/Боги"
         - file.hasProperty("Домен")
     order:
       - file.name

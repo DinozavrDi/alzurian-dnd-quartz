@@ -8,7 +8,7 @@ views:
     name: Таблица
     filters:
       and:
-        - file.folder == "Персонажи"
+        - file.folder == "👥 Персонажи"
         - file.hasProperty("Создатель")
     order:
       - file.name
