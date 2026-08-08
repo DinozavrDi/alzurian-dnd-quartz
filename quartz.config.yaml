@@ -298,6 +298,7 @@ plugins:
         - Длительность
         - Классы
         - Архетипы
+        - Класс
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---
